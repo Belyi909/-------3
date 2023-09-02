@@ -1,1 +1,1 @@
-/*# sourceMappingURL=about.min.css.map */
+.about{padding:100px 0;position:relative}.about_title{color:var(--grayscale-black, #000);font-family:Montserrat;font-size:16px;font-style:normal;font-weight:500;line-height:150%;text-transform:uppercase;width:100px}.about_title::after{position:absolute;content:"";top:800px;left:0;width:530px;height:2px;background:#000}.about_block{padding-top:20px;padding-right:40vw}/*# sourceMappingURL=about.min.css.map */

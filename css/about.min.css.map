@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"about.min.css"}
+{"version":3,"sources":["../scss/blocks/about.scss"],"names":[],"mappings":"AACA,OACI,eAAA,CACA,iBAAA,CACA,aACI,kCAAA,CACA,sBAAA,CACA,cAAA,CACA,iBAAA,CACA,eAAA,CACA,gBAAA,CACA,wBAAA,CACA,WAAA,CACA,oBACI,iBAAA,CACA,UAAA,CACA,SAAA,CACA,MAAA,CACA,WAAA,CACA,UAAA,CACA,eAAA,CAGR,aACI,gBAAA,CACA,kBAAA","file":"about.min.css"}

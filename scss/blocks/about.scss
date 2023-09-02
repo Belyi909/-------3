@@ -1,0 +1,28 @@
+@import '../variables';
+.about {
+    padding: 100px 0;
+    position: relative;
+    &_title {
+        color: var(--grayscale-black, #000);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        text-transform: uppercase;
+        width: 100px;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 800px;
+            left: 0;
+            width: 530px;
+            height: 2px;
+            background: #000;
+        }
+    }
+    &_block {
+        padding-top: 20px;
+        padding-right: 40vw;
+    }
+}
