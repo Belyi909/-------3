@@ -1,0 +1,65 @@
+.pdf {
+    padding-bottom: 100px;
+    position: relative;
+    h3 {
+        color: var(--grayscale-black, #000);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        text-transform: uppercase;
+        width: auto;
+        padding-bottom: 20px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 530px;
+            height: 2px;
+            background: #000;
+        }
+    }
+    &_title_main::after {
+        top: 10px;
+        left: 115px;
+    }
+    &_title_loc::after {
+        top: 3216px;
+        left: 300px;
+    }
+    &_title_plans::after {
+        top: 3216px;
+        left: 300px;
+    }
+    &_promo {
+        color: var(--grayscale-50, #333);
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 50.4px */
+        width: 600px;
+        padding-bottom: 20px;
+    }
+    ul {
+        color: var(--grayscale-10, #9C9C9C);
+        font-family: Montserrat; /* Montserrat/Regular/18 */
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+        padding: 0 0 48px 20px;
+    }
+    a {
+        color: #fff;
+        padding: 14px 32px;
+        background: $PrimaryBlue100;
+        margin-bottom: 35px;
+    }
+    .pdf_image {
+        position: absolute;
+        z-index: 1;
+        top: 150px;
+        left: 750px;
+    }
+}

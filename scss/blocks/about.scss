@@ -1,6 +1,6 @@
 @import '../variables';
 .about {
-    padding: 100px 0;
+    padding: 0;
     position: relative;
     &_title {
         color: var(--grayscale-black, #000);
@@ -10,12 +10,12 @@
         font-weight: 500;
         line-height: 150%; /* 24px */
         text-transform: uppercase;
-        width: 100px;
+        width: auto;
         &::after {
             position: absolute;
             content: '';
-            top: 800px;
-            left: 0;
+            top: 10px;
+            left: 115px;
             width: 530px;
             height: 2px;
             background: #000;
@@ -23,6 +23,68 @@
     }
     &_block {
         padding-top: 20px;
-        padding-right: 40vw;
+        padding-bottom: 100px;
+        width: 653px;
+        & h4 {
+            color: var(--grayscale-50, #333);
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 50.4px */
+            padding-bottom: 45px;
+        }
+        & p {
+            color: var(--grayscale-10, #9C9C9C);
+            /* Montserrat/Regular/18 */
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 28.8px */
+            margin-bottom: 31px;
+        }
+        &_button {
+            color: #fff;
+            padding: 14px 32px;
+            background: $PrimaryBlue100;
+        }
+    }
+    &_block_down {
+        margin-left: 40%;
+        padding-right: 3%;
+    }
+}
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 450px;
+    background: $PrimaryBlue100;
+    padding: 55px 70px;
+    margin-bottom: 100px;
+    &_block {
+        width: 45%;
+        display: inline;
+        & img {
+            display: block;
+            float: left;
+        }
+        & p {
+            display: block;
+            width: 66%;
+            float: left;
+            padding-top: 30px;
+            padding-left: 30px;
+            color: var(--grayscale-white, #FFF);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 24px */
+        }
+    }
+    &_block:nth-child(odd) {
+        width: 55%;
     }
 }
