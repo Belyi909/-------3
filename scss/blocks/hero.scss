@@ -20,6 +20,17 @@
         }
         &_smaller {
             font-size: 52px;
+            &::after {
+                top: 140px;
+                right: 10px;
+            }
+        }
+        &_smaller2 {
+            font-size: 52px;
+            &::after {
+                top: 140px;
+                right: 100px;
+            }
         }
     }
     .hero_image {

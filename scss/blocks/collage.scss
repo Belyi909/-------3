@@ -1,5 +1,6 @@
 .collage {
     padding-bottom: 100px;
+    position: relative;
     h3 {
         color: var(--grayscale-black, #000);
         font-family: Montserrat;
@@ -13,20 +14,18 @@
         &::after {
             position: absolute;
             content: '';
-            // top: 3216px;
-            // left: 300px;
             width: 475px;
             height: 2px;
             background: #000;
         }
     }
     &_title_loc::after {
-        top: 2400px;
-        left: 300px;
+        top: 9px;
+        left: 170px;
     }
     &_title_main::after {
-        top: 3216px;
-        left: 300px;
+        top: 10px;
+        left: 175px;
     }
     h4 {
         color: var(--grayscale-50, #333);

@@ -14,7 +14,7 @@
         &::after {
             position: absolute;
             content: '';
-            top: 10px;
+            top: 9px;
             left: 115px;
             width: 530px;
             height: 2px;
@@ -23,7 +23,7 @@
     }
     &_block {
         padding-top: 20px;
-        padding-bottom: 100px;
+        padding-bottom: 69px;
         width: 653px;
         & h4 {
             color: var(--grayscale-50, #333);

@@ -19,7 +19,12 @@
     width: 600px;
     &_item {
         &_button {
-            color: #fff;
+            color: var(--grayscale-white, #FFF);
+            font-family: Montserrat; /* Montserrat/Medium/14 */
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 21px */
             padding: 14px 32px;
             background: $PrimaryBlue100;
         }

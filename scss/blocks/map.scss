@@ -14,6 +14,7 @@
     }
 }
 .location_title {
+    position: relative;
     color: var(--grayscale-black, #000);
     font-family: Montserrat;
     font-size: 16px;
@@ -26,8 +27,8 @@
     &::after {
         position: absolute;
         content: '';
-        top: 253px;
-        left: 175px;
+        top: 9px;
+        left: 160px;
         width: 530px;
         height: 2px;
         background: #000;
