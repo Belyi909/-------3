@@ -131,6 +131,7 @@
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
     .collage {
+        padding-bottom: 60px;
         &_container {
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 15px;
@@ -144,14 +145,14 @@
             }
             &_box:nth-child(2) {
                 .comment2 {
-                    top: 225px;
+                    top: 205px;
                     left: 20px;
                     width: 233px;
                 }
             }
             &_box:nth-child(3) {
                 .comment3 {
-                    top: 225px;
+                    top: 205px;
                     left: 20px;
                     width: 233px;
                 }
@@ -162,7 +163,7 @@
                 grid-row-start: 3;
                 grid-row-end: 5;
                 .comment4 {
-                    top: 535px;
+                    top: 515px;
                     left: 20px;
                     width: 233px;
                 }
@@ -173,7 +174,7 @@
                 grid-row-start: 3;
                 grid-row-end: 4;
                 .comment5 {
-                    top: 235px;
+                    top: 230px;
                     left: 20px;
                     width: 233px;
                 }
@@ -184,7 +185,7 @@
                 grid-row-start: 4;
                 grid-row-end: 5;
                 .comment6 {
-                    top: 220px;
+                    top: 210px;
                     left: 20px;
                     width: 233px;
                 }
@@ -202,8 +203,11 @@
                 .coll2 {
                     display: block;
                 }
-                .coll_trim {
+                .coll-trim {
                     height: 300px;
+                }
+                .coll-trim2 {
+                    height: 613px;
                 }
                 .coll3 {
                     display: none;

@@ -76,3 +76,17 @@
         line-height: 150%; /* 48px */
     }
 }
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .footer {
+        height: 724px;
+        &_container {
+            flex-direction: row;
+            .logo {
+                width: 40%;
+            }
+            form {
+                padding-top: 32px;
+            }
+        }
+    }
+}
