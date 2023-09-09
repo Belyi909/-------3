@@ -29,6 +29,12 @@ a {
         margin-bottom: 100px;
         &_box {
             width: 100%;
+            .ins2 {
+                display: none;
+            }
+            .ins3 {
+                display: none;
+            }
         }
     }
 }
@@ -36,10 +42,55 @@ a {
     .container {
         width: 90vw;
     }
+    .container_insert {
+        width: 100%;
+        margin: 0 auto;
+        .image {
+            margin-bottom: 60px;
+            &_box {
+                width: 834px;
+                height: 436px;
+                img {
+                    width: 100%;
+                }
+                .ins {
+                    display: none;
+                }
+                .ins2 {
+                    display: block;
+                }
+                .ins3 {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px) {
     .container {
         width: auto;
         margin: 0 15px;
+    }
+    .container_insert {
+        width: auto;
+        margin: 0 auto;
+        .image {
+            margin-bottom: 51px;
+            &_box {
+                width: 100%;
+                img {
+                    width: auto;
+                }
+                .ins {
+                    display: none;
+                }
+                .ins2 {
+                    display: none;
+                }
+                .ins3 {
+                    display: block;
+                }
+            }
+        }
     }
 }

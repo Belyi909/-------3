@@ -109,6 +109,14 @@
                 width: 233px;
             }
         }
+        &_box {
+            .coll2 {
+                display: none;
+            }
+            .coll3 {
+                display: none;
+            }
+        }
     }
 }
 .img_comment {
@@ -120,4 +128,87 @@
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 21.6px */
+}
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .collage {
+        &_container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 10px;
+            &_box:first-child {
+                .comment1 {
+                    top: 235px;
+                    left: 20px;
+                    width: 395px;
+                }
+            }
+            &_box:nth-child(2) {
+                .comment2 {
+                    top: 225px;
+                    left: 20px;
+                    width: 233px;
+                }
+            }
+            &_box:nth-child(3) {
+                .comment3 {
+                    top: 225px;
+                    left: 20px;
+                    width: 233px;
+                }
+            }
+            &_box:nth-child(4) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 5;
+                .comment4 {
+                    top: 535px;
+                    left: 20px;
+                    width: 233px;
+                }
+            }
+            &_box:nth-child(5) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                .comment5 {
+                    top: 235px;
+                    left: 20px;
+                    width: 233px;
+                }
+            }
+            &_box:nth-child(6) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                .comment6 {
+                    top: 220px;
+                    left: 20px;
+                    width: 233px;
+                }
+            }
+            &_box {
+                position: relative;
+                width: 100%;
+                height: auto;
+                img {
+                    width: 100%;
+                }
+                .coll1 {
+                    display: none;
+                }
+                .coll2 {
+                    display: block;
+                }
+                .coll_trim {
+                    height: 300px;
+                }
+                .coll3 {
+                    display: none;
+                }
+            }
+        }
+    }
 }
