@@ -27,13 +27,22 @@
     }
 }
 .plans_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-bottom: 100px;
     &_card {
-        flex-basis: 23.1vw;
+        -ms-flex-preferred-size: 23.1vw;
+            flex-basis: 23.1vw;
         width: 380px;
         height: 650px;
         img {
@@ -75,10 +84,13 @@
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
     .plans_block {
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         margin-bottom: 100px;
         &_card {
-            flex-basis: 23.1vw;
+            -ms-flex-preferred-size: 23.1vw;
+                flex-basis: 23.1vw;
             width: 400px;
             height: 650px;
             img {

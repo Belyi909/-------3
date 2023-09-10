@@ -5,8 +5,11 @@
     background: $PrimaryBlue100;
 }
 .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     h5 {
         margin-top: 75px;
         margin-right: 120px;
@@ -30,6 +33,38 @@
             margin-bottom: 20px;
             background: inherit;
             border: 1px solid #FFF;
+            &::-webkit-input-placeholder {
+                color: var(--grayscale-white, #FFF);
+                font-family: Montserrat; /* Montserrat/Regular/16 */
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+            &::-moz-placeholder {
+                color: var(--grayscale-white, #FFF);
+                font-family: Montserrat; /* Montserrat/Regular/16 */
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+            &:-ms-input-placeholder {
+                color: var(--grayscale-white, #FFF);
+                font-family: Montserrat; /* Montserrat/Regular/16 */
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+            &::-ms-input-placeholder {
+                color: var(--grayscale-white, #FFF);
+                font-family: Montserrat; /* Montserrat/Regular/16 */
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
             &::placeholder {
                 color: var(--grayscale-white, #FFF);
                 font-family: Montserrat; /* Montserrat/Regular/16 */
@@ -58,7 +93,8 @@
         margin-top: 90px;
         height: auto;
         color: var(--grayscale-white, #FFF);
-        font-feature-settings: 'clig' off, 'liga' off;
+        -webkit-font-feature-settings: 'clig' off, 'liga' off;
+                font-feature-settings: 'clig' off, 'liga' off;
         font-family: Montserrat;
         font-size: 32px;
         font-style: normal;
@@ -80,7 +116,10 @@
     .footer {
         height: 724px;
         &_container {
-            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
             .logo {
                 width: 40%;
             }

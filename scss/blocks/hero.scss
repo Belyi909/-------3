@@ -36,7 +36,8 @@
         }
     }
     &_image1 {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 100%;
         height: 600px; // Обратить внимание!
     }
@@ -46,10 +47,18 @@
         top: 240px;
         background: $PrimaryBlue100;
         width: 252px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         padding-top: 30px;
         &_item {
             padding: 40px 0;
@@ -118,8 +127,13 @@
         &_parametrs {
             position: static;
             width: 100%;
-            flex-direction: row;
-            justify-content: space-evenly;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
             &:not(.hero_parametrs_large) {
                 position: absolute;
                 top: auto;
@@ -167,7 +181,8 @@
             display: none;
         }
         &_image1 {
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             width: 100%;
             height: auto;
         }
@@ -176,7 +191,8 @@
             width: 100%;
         }
         &_image3 {
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             width: 100%;
             height: 200px;
         }
@@ -197,8 +213,13 @@
         &_parametrs {
             position: static;
             width: 100%;
-            flex-direction: row;
-            justify-content: space-evenly;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
             padding-top: 15px;
             &:not(.hero_parametrs_large) {
                 position: absolute;
@@ -220,13 +241,19 @@
         }
     }
     .hero-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         .nav_item {
             font-size: 14px;
             text-align: center;
-            flex: 1; 
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1; 
             display: block;
             margin: 15px 5px;
         }
