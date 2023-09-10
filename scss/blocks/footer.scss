@@ -87,7 +87,15 @@
             form {
                 padding-top: 32px;
             }
+            // a {
+            //     margin-left: 30px;
+            // }
         }
+    }
+}
+@media screen and (max-width: 1143px) and (min-width: 740px) {
+    .footer_container form {
+        padding-right: 20%;
     }
 }
 @media screen and (max-width: 767px) {
@@ -104,6 +112,7 @@
         }
         form {
             padding-top: 60px;
+            padding-right: 20%;
         }
         .logo {
             position: absolute;
