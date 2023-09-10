@@ -90,3 +90,34 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .footer {
+        height: 710px;
+    }
+    .footer_container {
+        position: relative;
+        h5 {
+            font-size: 20px;
+            margin-top: 110px;
+            margin-right: 0;
+            height: auto;
+        }
+        form {
+            padding-top: 60px;
+        }
+        .logo {
+            position: absolute;
+            z-index: 1;
+            font-size: 24px;
+            top: 550px;
+        }
+        a {
+            font-size: 24px;
+        }
+        .footer-tel {
+            position: absolute;
+            z-index: 1;
+            top: 500px;
+        }
+    }
+}

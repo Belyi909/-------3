@@ -216,3 +216,84 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .collage {
+        padding-bottom: 60px;
+        h3 {
+            font-size: 12px;
+            padding-bottom: 11px;
+            &::after {  
+            width: 225px;
+            }
+        }
+        h4 {
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        &_container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            &_box {
+                position: relative;
+                width: 100%;
+                height: auto;
+                .coll1 {
+                    display: none;
+                }
+                .coll2 {
+                    display: none;
+                }
+                .coll3 {
+                    display: block;
+                }
+            }
+            &_box:first-child {
+                .comment1 {
+                    top: 210px;
+                    left: 20px;
+                    width: 260px;
+                }
+            }
+            &_box:nth-child(2) {
+                .comment2 {
+                    top: 210px;
+                    left: 20px;
+                    width: 260px;
+                }
+            }
+            &_box:nth-child(3) {
+                .comment3 {
+                    top: 210px;
+                    left: 20px;
+                    width: 260px;
+                }
+            }
+            &_box:nth-child(4) {
+                .comment4 {
+                    top: 500px;
+                    left: 20px;
+                    width: 255px;
+                }
+            }
+            &_box:nth-child(5) {
+                .comment5 {
+                    top: 220px;
+                    left: 20px;
+                    width: 260px;
+                }
+            }
+            &_box:nth-child(6) {
+                .comment6 {
+                    top: 210px;
+                    left: 20px;
+                    width: 260px;
+                }
+            }
+        }
+        &_title_main::after {
+            top: 7px;
+            left: 125px;
+        }
+    }
+}

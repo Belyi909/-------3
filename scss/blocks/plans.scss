@@ -73,3 +73,74 @@
         margin-bottom: 35px;
     }
 }
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .plans_block {
+        align-items: flex-start;
+        margin-bottom: 100px;
+        &_card {
+            flex-basis: 23.1vw;
+            width: 400px;
+            height: 650px;
+            img {
+                margin: 0 10px;
+                width: 350px;
+                height: auto;
+                padding-bottom: 58px;
+            }
+            .img_low {
+                padding-bottom: 70px;
+            }
+        }
+    }
+    .card_text {
+        padding-right: 40px;
+        width: 370px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .plans_about {
+        width: 300px;
+        P {
+            padding-bottom: 40px;
+            font-size: 16px;
+        }
+    }
+    .plans_title {
+        font-size: 12px;
+        padding-bottom: 31px;
+        &::after {
+            top: 9px;
+            left: 105px;
+            width: 240px;
+        }
+    }
+    .plans_block {
+        margin-bottom: 120px;
+        row-gap: 10px;
+        &_card {
+            width: 380px;
+            height: auto;
+            padding-bottom: 45px;
+            img {
+                margin: 0 10px;
+                width: 300px;
+                height: 270px;
+                padding-bottom: 16px;
+            }
+        }
+    }
+    .card_text {
+        padding-right: 0;
+        h5 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+            height: 100px;
+            width: auto;
+        }
+        a {
+            padding: 14px 28.2%;
+        }
+    }
+}
